@@ -1,9 +1,7 @@
 require_relative 'config/application'
+# you need to require application.rb to the file that you want to execute directly
 
 puts "Put your application code in #{File.expand_path(__FILE__)}"
-
-
-
 #create dummy data
 
 command = ARGV.slice!(0)
