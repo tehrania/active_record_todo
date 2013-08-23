@@ -1,12 +1,23 @@
 
 class Task < ActiveRecord::Base
 
-def list_all_tasks
+def self.list
   Task.all
 end
 
-def add_task(task)
-  Task.create()
+def self.add(task)
+  Task.create(item: task, complete: 0)
+end
+
+def complete(id)
+  current_task = Task.find(id)
+  current_task 
+end
+
+def delete
+  
 end
 
 end
+
+
